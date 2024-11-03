@@ -13,6 +13,6 @@ export class AuthorsService {
   private http: HttpClient = inject(HttpClient);
 
   public getAuthorInfo(id: string): Observable<Author> {
-    return this.http.get<Author>(Url + 'authors/info/' + id);
+    return this.http.get<Author>(Url + 'authors/' + id);
   }
 }
