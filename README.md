@@ -4,3 +4,7 @@
 Access SpringBoot RESTFul API - in branch *server* 
 
 Access Angular Client Application - in branch *client*
+
+
+Joey Issa
+300219818
