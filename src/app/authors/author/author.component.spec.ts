@@ -21,6 +21,10 @@ describe('AuthorComponent', () => {
     fixture.detectChanges();
   });
 
+  it('should have a defined component', () => {
+    expect(component).toBeDefined();
+  });
+  
   it('should create', () => {
     expect(component).toBeTruthy();
   });
