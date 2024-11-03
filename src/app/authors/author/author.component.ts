@@ -5,11 +5,11 @@ import {Subscription} from "rxjs";
 import { NgIf } from '@angular/common';
 import { AuthorsService } from '../service/authors.service';
 import { Author } from '../model/author';
-
+import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-author',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgFor],
   templateUrl: './author.component.html',
   styleUrl: './author.component.css'
 })

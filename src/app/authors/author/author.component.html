@@ -11,4 +11,16 @@
       <div class="col-3">Title:</div>
       <div class="col-9">{{ selectedAuthor.lastName }}</div>
     </div>
+    <div class="row" [hidden]="!selectedAuthor.bio">
+      <div class="col-3">Bio:</div>
+      <div class="col-9">{{ selectedAuthor.bio }}</div>
+    <div class="row" [hidden]="!selectedAuthor.books">
+        <div class="col-3">Author:</div>
+        <div class="col-9">
+          <ul>
+            <li *ngFor="let book of selectedAuthor.books">
+              {{ book.title }}
+            </li>
+          </ul>
+      </div>
   </div>
